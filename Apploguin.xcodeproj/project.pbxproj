@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5908447E22FAF45B5702DE05 /* Pods_Apploguin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB93ACEDCEDC1C9CE72DF02 /* Pods_Apploguin.framework */; };
 		6CE13DE52C942B5800651149 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE13DE42C942B5800651149 /* AppDelegate.swift */; };
 		6CE13DE72C942B5800651149 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE13DE62C942B5800651149 /* SceneDelegate.swift */; };
 		6CE13DE92C942B5800651149 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE13DE82C942B5800651149 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BB93ACEDCEDC1C9CE72DF02 /* Pods_Apploguin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apploguin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE13DE12C942B5800651149 /* Apploguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apploguin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE13DE42C942B5800651149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CE13DE62C942B5800651149 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		6CE13DED2C942B5800651149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CE13DF02C942B5800651149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CE13DF22C942B5800651149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A66317040AF1BD5F86D13860 /* Pods-Apploguin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apploguin.debug.xcconfig"; path = "Target Support Files/Pods-Apploguin/Pods-Apploguin.debug.xcconfig"; sourceTree = "<group>"; };
+		FAB63F52DD4DF39FA77F2920 /* Pods-Apploguin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apploguin.release.xcconfig"; path = "Target Support Files/Pods-Apploguin/Pods-Apploguin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5908447E22FAF45B5702DE05 /* Pods_Apploguin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				6CE13DE32C942B5800651149 /* Apploguin */,
 				6CE13DE22C942B5800651149 /* Products */,
+				7A2725E1608566E0F185C168 /* Pods */,
+				D030AC1008ACE7AAE0D28F21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Apploguin;
 			sourceTree = "<group>";
 		};
+		7A2725E1608566E0F185C168 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A66317040AF1BD5F86D13860 /* Pods-Apploguin.debug.xcconfig */,
+				FAB63F52DD4DF39FA77F2920 /* Pods-Apploguin.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D030AC1008ACE7AAE0D28F21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BB93ACEDCEDC1C9CE72DF02 /* Pods_Apploguin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CE13DF52C942B5800651149 /* Build configuration list for PBXNativeTarget "Apploguin" */;
 			buildPhases = (
+				17C57F020D98778D89735344 /* [CP] Check Pods Manifest.lock */,
 				6CE13DDD2C942B5800651149 /* Sources */,
 				6CE13DDE2C942B5800651149 /* Frameworks */,
 				6CE13DDF2C942B5800651149 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17C57F020D98778D89735344 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Apploguin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6CE13DDD2C942B5800651149 /* Sources */ = {
@@ -287,6 +338,7 @@
 		};
 		6CE13DF62C942B5800651149 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66317040AF1BD5F86D13860 /* Pods-Apploguin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +366,7 @@
 		};
 		6CE13DF72C942B5800651149 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAB63F52DD4DF39FA77F2920 /* Pods-Apploguin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
